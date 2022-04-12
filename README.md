@@ -1,12 +1,12 @@
-Lista de Compras
+# Lista de Compras
 
 1º Projeto do 1º Módulo da turma NDD do curso DEVin ministrado pelo SENAI.
 
-INTRODUÇÃO:
+## INTRODUÇÃO:
 
 Você está participando de um processo seletivo para ingressar em uma vaga de programador em uma grande empresa de TI. Uma das etapas do processo envolve a criação de uma aplicação web para controle e cálculo de uma lista de compras.
 
-REQUISITOS DA APLICAÇÃO:
+## REQUISITOS DA APLICAÇÃO:
 
 A aplicação que deverá ser realizada individualmente, deve contemplar os seguintes requisitos:
 
@@ -26,10 +26,12 @@ A aplicação que deverá ser realizada individualmente, deve contemplar os segu
 
 8. A lista deve ser salva no "localStorage" do navegador (incluindo os produtos que já foram realizados), e deve ser carregada sempre que a página for reaberta.
 
-Projeto realizado por:
+## Projeto realizado por:
 
-Conrado Fortunato
+**Conrado Fortunato**
 
 https://github.com/conradoftnt
+
 https://www.linkedin.com/in/conrado-fortunato/
+
 https://www.instagram.com/conrado.fortunato/
