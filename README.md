@@ -2,11 +2,11 @@
 
 1º Projeto do 1º Módulo da turma NDD do curso DEVin ministrado pelo SENAI.
 
-## INTRODUÇÃO:
+## Introdução:
 
 Você está participando de um processo seletivo para ingressar em uma vaga de programador em uma grande empresa de TI. Uma das etapas do processo envolve a criação de uma aplicação web para controle e cálculo de uma lista de compras.
 
-## REQUISITOS DA APLICAÇÃO:
+## Requisitos da Aplicação:
 
 A aplicação que deverá ser realizada individualmente, deve contemplar os seguintes requisitos:
 
