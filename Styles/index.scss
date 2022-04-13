@@ -1,0 +1,17 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #e9cf4a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    h1 {
+        padding-top: 8px;
+        font-size: 30px;
+    }
+    img {
+        width: 50px;
+    }
+}
