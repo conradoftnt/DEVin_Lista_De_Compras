@@ -2,18 +2,25 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-header {
-  background-color: #e9cf4a;
+body {
+  background-color: #eee3b0;
+}
+body header {
+  background-color: #c2ab69;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-header h1 {
+body header h1 {
   padding-top: 8px;
   font-size: 30px;
 }
-header img {
+body header img {
   width: 50px;
+}
+
+.postit {
+  background-color: #f5e180;
 }
 
 /*# sourceMappingURL=index.css.map */
