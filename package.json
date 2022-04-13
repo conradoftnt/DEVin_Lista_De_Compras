@@ -1,0 +1,25 @@
+{
+    "name": "projeto_1_modulo-1",
+    "version": "1.0.0",
+    "description": "1º Projeto do 1º Módulo da turma NDD do curso DEVin ministrado pelo SENAI.",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "npx tsc -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/conradoftnt/Projeto_1_Modulo_1_DEVin_NDD.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/conradoftnt/Projeto_1_Modulo_1_DEVin_NDD/issues"
+    },
+    "homepage": "https://github.com/conradoftnt/Projeto_1_Modulo_1_DEVin_NDD#readme",
+    "devDependencies": {
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
+}
