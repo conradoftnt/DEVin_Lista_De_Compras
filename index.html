@@ -37,8 +37,13 @@
                     type="text"
                     placeholder="Digite um produto para inserir na lista..."
                     class="form-control m-3 me-2"
+                    id="entradaParaAdicao"
                 />
-                <button type="submit" class="btn btn-secondary m-3 ms-1">
+                <button
+                    type="button"
+                    class="btn btn-secondary m-3 ms-1"
+                    onclick="adicionaNaLista()"
+                >
                     Inserir
                 </button>
             </form>
@@ -47,7 +52,7 @@
             <div class="d-flex">
                 <!-- Lista de itens -->
                 <div class="postit card m-2 rounded-0" style="width: 50%">
-                    <ul class="list-group list-group-flush m-2">
+                    <ul class="list-group list-group-flush m-2" id="lista">
                         <!-- Item de teste, depois os itens serão todos adicionados via JS -->
                         <li class="postit list-group-item">
                             <input
