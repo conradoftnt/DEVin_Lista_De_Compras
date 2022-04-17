@@ -34,6 +34,7 @@ class Item {
         novoLi.classList.add("list-group-item");
         novoLi.classList.add("d-flex");
         novoLi.classList.add("justify-content-between");
+        novoLi.classList.add("align-items-center");
         novoLi.setAttribute("id", this.id);
 
         // Cria o checkbox e adiciona ele no item da lista
@@ -44,7 +45,7 @@ class Item {
 
         // Adiciona o produto digitado
         const produto = document.createElement("p");
-        produto.classList.add("ms-1");
+        produto.classList.add("mb-0");
         produto.innerText = this.item;
 
         if (this.marcado === true) {
