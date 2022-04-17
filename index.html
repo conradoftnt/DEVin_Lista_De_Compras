@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="./Styles/index.css" />
         <title>Lista de Compras</title>
     </head>
-    <body>
+    <body onload="carregaLista()">
         <!-- Cabeçalho da página -->
         <header>
             <img src="./Images/favicon.png" alt="Lista de Compras" />
@@ -36,12 +36,12 @@
                 <input
                     type="text"
                     placeholder="Digite um produto para inserir na lista..."
-                    class="form-control m-3 me-2"
+                    class="form-control m-3 me-2 rounded-0"
                     id="entradaParaAdicao"
                 />
                 <button
                     type="button"
-                    class="btn btn-secondary m-3 ms-1"
+                    class="btn btn-secondary m-3 ms-1 rounded-0"
                     onclick="adicionaNaLista()"
                 >
                     Inserir
@@ -52,17 +52,7 @@
             <div class="d-flex">
                 <!-- Lista de itens -->
                 <div class="postit card m-2 rounded-0" style="width: 50%">
-                    <ul class="list-group list-group-flush m-2" id="lista">
-                        <!-- Item de teste, depois os itens serão todos adicionados via JS -->
-                        <li class="postit list-group-item">
-                            <input
-                                type="checkbox"
-                                class="m-1 form-check-input"
-                                id="li_Teste"
-                            />
-                            Teste
-                        </li>
-                    </ul>
+                    <ul class="list-group list-group-flush m-2" id="lista"></ul>
                 </div>
 
                 <!-- Valor total -->
@@ -74,9 +64,53 @@
                         class="position-absolute top-50 start-50 translate-middle"
                     >
                         <p style="margin-bottom: 0px"><b>Valor Total</b></p>
-                        <p>
-                            <span>R$ </span><span id="valorTotal">00,00</span>
-                        </p>
+                        <p><span>R$ </span><span id="valorTotal">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de para pegar o valor dos itens -->
+        <div
+            class="modal fade"
+            id="modalValor"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalItemValor"
+            aria-hidden="true"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-body d-flex justify-content-center">
+                    <div class="modal-dialog">
+                        <div class="modal-content rounded-0 postit">
+                            <div class="modal-body">
+                                <input
+                                    type="number"
+                                    id="valorItem"
+                                    placeholder="Insira o valor do item..."
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-danger rounded-0"
+                                    data-bs-dismiss="modal"
+                                    onclick="fechaModal()"
+                                >
+                                    Fechar
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary rounded-0"
+                                    onclick="inserePreco()"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Inserir
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +122,7 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
-        <script src="./dist/index.js"></script>
+        <!-- <script src="./dist/index.js"></script> -->
+        <script src="app.js"></script>
     </body>
 </html>

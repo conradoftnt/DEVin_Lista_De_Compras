@@ -23,4 +23,14 @@ body header img {
   background-color: #f5e180;
 }
 
+.riscado {
+  text-decoration: line-through;
+}
+
+.excluir {
+  width: 22.5px;
+  height: 22.5px;
+  border: none;
+}
+
 /*# sourceMappingURL=index.css.map */
